@@ -5,7 +5,7 @@ var controller = Botkit.slackbot({
  debug: false
 });
 controller.spawn({
- token: 'xoxb-153299990582-591720844293-bwDFhvy3fhE11xAl7Rth5n3p'
+ token: process.env.token
 }).startRTM(function(err) {
  if (err) {
  throw new Error(err);
